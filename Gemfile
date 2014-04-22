@@ -22,10 +22,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.1.1'
 # Include images gem, which is paperclip
 gem 'paperclip', github: 'thoughtbot/paperclip' # '~> 3.5.4' #
+# adding dropbox support for file storage
+gem "paperclip-dropbox", ">= 1.1.7"
+# to hide sensitive configuration file
+gem "figaro"
 # Test if it solves imagemagick issues
 gem 'cocaine', '~> 0.5.4'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
 
 group :production do
 	gem 'pg'
